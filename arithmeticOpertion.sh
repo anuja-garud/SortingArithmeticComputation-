@@ -19,7 +19,21 @@ UC4=$(($a%$b+$c));
 echo $UC4;
 
 
+#storeinDictionary
+
 for (( i=1 ; i<=4 ; i++ ))
 do
         ucDictionary[$i]=$((UC$i))
+done
+
+
+#storeinArray
+count=0
+
+for ((   j=1 ; j<=4 ; j++ ))
+do
+
+      {ucArray[@]}=${ucDictionary[$j]}
+      counter=$((count+1));
+      ((count++));
 done
