@@ -6,6 +6,9 @@ read -p " Enter the value  " c;
 
 declare -A ucDictionary
 
+declare -a ucArray
+
+
 UC1=$(($a+$b*$c));
 echo $UC1;
 
@@ -37,3 +40,7 @@ do
       counter=$((count+1));
       ((count++));
 done
+
+#sortingDecending
+printf '%s\n' "${ucDictionary[@]}" | sort -nr
+
