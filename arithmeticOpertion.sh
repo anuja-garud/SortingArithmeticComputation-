@@ -44,3 +44,24 @@ done
 #sortingDecending
 printf '%s\n' "${ucDictionary[@]}" | sort -nr
 
+#Ascending
+
+printf '%s\n' "${ucDictionary[@]}" | sort -nr
+
+echo ${#ucArray[@]}
+
+for ((k = 0; k<5; k++))
+do
+
+    for((l = 0; l<(($counter-1)); l++))
+    do
+
+        if [ ${ucArray[l]} -gt ${ucArray[$((l+1))]} ]
+        then
+
+            temp=${ucArray[l]}
+            ucArray[$l]=${ucArray[$((l+1))]}
+            ucArray[$((l+1))]=$temp
+        fi
+    done
+done
