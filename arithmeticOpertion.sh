@@ -9,3 +9,7 @@ echo $UC1;
 
 UC2=$(($a*$b+$c));
 echo $UC2;
+
+UC3=$(($c+$a/$b));
+echo $UC3;
+
