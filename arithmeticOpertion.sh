@@ -6,3 +6,6 @@ read -p " Enter the value  " c;
 
 UC1=$(($a+$b*$c));
 echo $UC1;
+
+UC2=$(($a*$b+$c));
+echo $UC2;
